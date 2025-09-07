@@ -89,3 +89,43 @@ p{margin:0 0 1rem;color:#2a2f39}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .footer a{color:#c9d2e6;text-decoration:none;margin-left:12px}
 .footer a:hover{color:#fff}
+
+/* === Layout fixes / alignment pass === */
+
+/* Contain and center content */
+.container{
+  width:min(1100px,92vw);
+  margin-inline:auto;
+}
+
+/* Sticky nav with proper layout + spacing */
+.nav{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid #eceff4}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:.75rem 0}
+.nav-inner nav{display:flex; align-items:center; gap:18px}
+.nav a{display:inline-block; text-decoration:none; color:#0b0e13; font-weight:700}
+
+/* Hero: center + consistent vertical rhythm */
+.hero{display:grid; place-items:center; text-align:left; min-height:52vh; background:#0b0e13; color:#eef2f8}
+.hero-inner{width:min(1100px,92vw); margin-inline:auto; padding:64px 0}
+.hero p{max-width:720px; margin:12px 0 20px}
+
+/* Section spacing: avoid oversized gap after hero */
+.section{padding:48px 0}
+.section:first-of-type{padding-top:40px}          /* “Our Mission” */
+.section h2{margin:0 0 16px; text-align:center}
+
+/* Cards: align and keep consistent gutters */
+.cards{display:grid; gap:18px; grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){ .cards{grid-template-columns:1fr} }
+
+/* CTA buttons row */
+.cta-row{display:flex; gap:12px; flex-wrap:wrap}
+
+/* Fix stat card sizing so it doesn’t look left-heavy */
+.grid-2{display:grid; gap:28px; grid-template-columns:1.4fr .6fr}
+@media (max-width:900px){ .grid-2{grid-template-columns:1fr} }
+
+/* Palette enforcement (orange/black/white) */
+:root{ --orange:#f28c00 }
+.btn{ background:var(--orange) }
+.btn.ghost{ background:transparent; border:2px solid #ffffff77; color:#fff }
