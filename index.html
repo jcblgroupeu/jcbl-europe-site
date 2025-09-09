@@ -10,7 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css" />
-  <style>html{scroll-behavior:smooth}</style>
+  <style>
+    html { scroll-behavior: smooth }
+    .center-text { text-align: center; }
+    .stats .stat { color: #ff6600; } /* orange for numbers + labels */
+    .press-cards { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .press-cards .card { max-width: 420px; flex: 1 1 300px; }
+  </style>
 </head>
 <body>
   <header class="nav">
@@ -39,18 +45,16 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>Our Mission</h2>
-          <p class="lead">Since 1989, the JCBL Group has engineered world‑class mobility and industrial solutions. JCBL Europe extends this legacy across the continent.</p>
-          <p>From buses and armoured vehicles to aerospace composites and advanced industrial assemblies, we unite European partners with proven Indian manufacturing scale and precision.</p>
-        </div>
+    <section id="about" class="section center-text">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p class="lead">Since 1989, the JCBL Group has engineered world-class mobility and industrial solutions. JCBL Europe extends this legacy across the continent.</p>
+        <p>From buses and armoured vehicles to aerospace composites and advanced industrial assemblies, we unite European partners with proven Indian manufacturing scale and precision.</p>
         <div class="card stats">
-          <div class="stat"><strong>35+</strong><span>Years</span></div>
-          <div class="stat"><strong>5</strong><span>Factories</span></div>
-          <div class="stat"><strong>3K+</strong><span>People</span></div>
-          <div class="stat"><strong>Global</strong><span>Partnerships</span></div>
+          <div class="stat"><strong>35+</strong><span> Years</span></div>
+          <div class="stat"><strong>5</strong><span> Factories</span></div>
+          <div class="stat"><strong>3K+</strong><span> People</span></div>
+          <div class="stat"><strong>Global</strong><span> Partnerships</span></div>
         </div>
       </div>
     </section>
@@ -61,7 +65,7 @@
         <div class="cards">
           <article class="card">
             <h3>Mobility Engineering</h3>
-            <p>Design and manufacture of buses, coaches and special‑purpose vehicles built for global standards.</p>
+            <p>Design and manufacture of buses, coaches and special-purpose vehicles built for global standards.</p>
           </article>
           <article class="card">
             <h3>Defence & Armouring</h3>
@@ -89,11 +93,11 @@
           </article>
           <article class="card">
             <h4>Rolus Slovakia R&D Hub</h4>
-            <p>European centre for advanced defence and aerospace engineering — co‑developing next‑generation systems and precision technologies with global partners.</p>
+            <p>European centre for advanced defence and aerospace engineering — co-developing next-generation systems and precision technologies with global partners.</p>
           </article>
           <article class="card">
             <h4>Special Purpose Vehicles</h4>
-            <p>Custom‑engineered firefighting trucks, mobile healthcare units and logistics carriers supporting critical infrastructure.</p>
+            <p>Custom-engineered firefighting trucks, mobile healthcare units and logistics carriers supporting critical infrastructure.</p>
           </article>
         </div>
       </div>
@@ -102,10 +106,10 @@
     <section id="press" class="section section-alt">
       <div class="container">
         <h2>Press</h2>
-        <div class="cards">
+        <div class="press-cards">
           <article class="card press">
             <div class="press-meta">BusinessWorld — Apr 2025</div>
-            <h4>JCBL Group signs MoU with Rolus Slovakia for next‑generation combat vehicle technologies</h4>
+            <h4>JCBL Group signs MoU with Rolus Slovakia for next-generation combat vehicle technologies</h4>
             <a class="arrow" href="https://www.businessworld.in/article/jcbl-group-and-texmaco-defence-systems-sign-strategic-defence-mou-with-rolus-slovakia-for-next-generation-combat-vehicle-technologies-555253" target="_blank" rel="noopener">Read the full article →</a>
           </article>
           <article class="card press">
@@ -124,15 +128,14 @@
           <p>Let’s explore collaborations, partnerships and supply programmes across Europe.</p>
           <ul class="contact-list">
             <li><strong>Email:</strong> contact@jcbleurope.com</li>
-            <li><strong>Partnerships:</strong> partnerships@jcbleurope.com</li>
             <li><strong>Office:</strong> Transistorstraat 31, 1322 CK, Almere, The Netherlands</li>
           </ul>
         </div>
-        <form class="card form" action="#" method="post" onsubmit="alert('Thanks! Connect Formspree to receive submissions.'); return false;">
-          <label>First name<input required></label>
-          <label>Last name<input required></label>
-          <label>Email<input type="email" required></label>
-          <label>Message<textarea rows="4"></textarea></label>
+        <form class="card form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>First name<input name="first" required></label>
+          <label>Last name<input name="last" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="4"></textarea></label>
           <button class="btn" type="submit">Send Message</button>
         </form>
       </div>
