@@ -1,154 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>JCBL Europe — A JCBL Group Enterprise</title>
-  <meta name="description" content="JCBL Europe is a JCBL Group enterprise — mobility engineering, defence & armouring, aerospace & composites for global markets.">
-  <link rel="icon" href="assets/logo.png">
+  <meta name="description" content="JCBL Europe brings over 35 years of engineering and manufacturing excellence to Europe — mobility engineering, defence & armouring, aerospace & composites." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <style>html{scroll-behavior:smooth}</style>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">
-        <img src="assets/logo.png" alt="JCBL Europe logo" height="48">
-      </div>
-      <nav>
-        <a href="#mission">About</a>
+      <a class="brand" href="#top" aria-label="JCBL Europe">
+        <img src="assets/logo.svg" alt="JCBL Europe logo" height="28" />
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#projects">Projects</a>
         <a href="#press">Press</a>
-        <a href="#contact">Contact</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1><span>JCBL Europe</span></h1>
-      <p>Carrying forward over 35 years of trust, innovation and manufacturing excellence into Europe and beyond.</p>
-      <div class="cta-row">
-        <a href="#expertise" class="btn">Explore Our Expertise</a>
-        <a href="#contact" class="btn ghost">Partner With Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mission -->
-  <section id="mission" class="section">
-    <div class="container grid-2">
-      <div>
-        <h2>Our Mission</h2>
-        <p class="lead">JCBL Europe, a JCBL Group company, represents a legacy of engineering excellence since 1989.</p>
-        <p>We bring Europe closer to the Group’s diversified portfolio — from buses and armoured vehicles to aerospace composites and advanced industrial solutions — shaping the future of global manufacturing.</p>
-      </div>
-        <div class="card stat">
-          <div class="stat-item"><strong>35+</strong><span>Years</span></div>
-          <div class="stat-item"><strong>5</strong><span>Factories</span></div>
-          <div class="stat-item"><strong>3K+</strong><span>People</span></div>
-          <div class="stat-item"><strong>Global</strong><span>Partnerships</span></div>
+  <main id="top">
+    <section class="hero hero-photo" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title">JCBL Europe</h1>
+        <p class="sub">Carrying forward over 35 years of trust, innovation and manufacturing excellence into Europe and beyond.</p>
+        <div class="cta-row">
+          <a href="#expertise" class="btn">Explore Our Expertise</a>
         </div>
-    </div>
-  </section>
-
-  <!-- Expertise -->
-  <section id="expertise" class="section alt">
-    <div class="container">
-      <h2>Our Expertise</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Mobility Engineering</h3>
-          <p>Design and manufacture of buses, coaches and SPVs built for global markets.</p>
-        </article>
-        <article class="card">
-          <h3>Defence & Armouring</h3>
-          <p>Secure mobility solutions including tactical and protection vehicles.</p>
-        </article>
-        <article class="card">
-          <h3>Aerospace & Composites</h3>
-          <p>Lightweight structures, UAV support systems and advanced aerospace components.</p>
-        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="cards cards-2">
-        <article class="card">
-          <h4>Global Bus Partnerships</h4>
-          <p>Collaborations with Daimler, Toyota and SML Isuzu to deliver advanced mobility platforms worldwide.</p>
-        </article>
-        <article class="card">
-          <h4>Defence & Aerospace Platforms</h4>
-          <p>Integrated programmes spanning tactical vehicles and unmanned aerial systems (drones) tailored for modern defence needs.</p>
-        </article>
-        <article class="card">
-          <h4>Rolus Slovakia R&D Hub</h4>
-          <p>European innovation hub developing next‑generation combat systems, aerospace composites and precision engineering solutions.</p>
-        </article>
-        <article class="card">
-          <h4>Special Purpose Vehicles</h4>
-          <p>Custom‑engineered firefighting trucks, mobile healthcare units and logistics carriers supporting critical infrastructure.</p>
-        </article>
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Our Mission</h2>
+          <p class="lead">Since 1989, the JCBL Group has engineered world‑class mobility and industrial solutions. JCBL Europe extends this legacy across the continent.</p>
+          <p>From buses and armoured vehicles to aerospace composites and advanced industrial assemblies, we unite European partners with proven Indian manufacturing scale and precision.</p>
+        </div>
+        <div class="card stats">
+          <div class="stat"><strong>35+</strong><span>Years</span></div>
+          <div class="stat"><strong>5</strong><span>Factories</span></div>
+          <div class="stat"><strong>3K+</strong><span>People</span></div>
+          <div class="stat"><strong>Global</strong><span>Partnerships</span></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Press -->
-  <section id="press" class="section alt">
-    <div class="container">
-      <h2>Press</h2>
-      <div class="cards">
-        <article class="card press">
-          <div class="press-meta">BusinessWorld — Apr 2025</div>
-          <h4>JCBL Group signs MoU with Rolus Slovakia for next‑generation combat vehicle technologies</h4>
-          <a class="arrow" href="https://www.businessworld.in/article/jcbl-group-and-texmaco-defence-systems-sign-strategic-defence-mou-with-rolus-slovakia-for-next-generation-combat-vehicle-technologies-555253" target="_blank" rel="noopener">Read the full article →</a>
-        </article>
-        <article class="card press">
-          <div class="press-meta">Entrepreneur India — Oct 2024</div>
-          <h4>Rishi Aggarwal on scaling innovation, global partnerships and building a diversified manufacturing powerhouse</h4>
-          <a class="arrow" href="https://www.entrepreneur.com/en-in/news-and-trends/rishi-aggarwal-md-jcbl-group/481526" target="_blank" rel="noopener">Read the full article →</a>
-        </article>
+    <section id="expertise" class="section section-alt">
+      <div class="container">
+        <h2>Our Expertise</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Mobility Engineering</h3>
+            <p>Design and manufacture of buses, coaches and special‑purpose vehicles built for global standards.</p>
+          </article>
+          <article class="card">
+            <h3>Defence & Armouring</h3>
+            <p>Secure mobility platforms including tactical, protection and speciality mission vehicles.</p>
+          </article>
+          <article class="card">
+            <h3>Aerospace & Composites</h3>
+            <p>Lightweight structures, UAV support systems and advanced aerospace components.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container grid-2">
-      <div>
-        <h2>Contact Us</h2>
-        <p>Connect with JCBL Europe to explore collaborations, partnerships and global opportunities.</p>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> contact@jcbleurope.com</li>
-          <li><strong>Partnerships:</strong> partnerships@jcbleurope.com</li>
-          <li><strong>Office:</strong> Transistorstraat 31, 1322 CK, Almere, The Netherlands</li>
-        </ul>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="cards cards-2">
+          <article class="card">
+            <h4>Global Bus Partnerships</h4>
+            <p>Collaboration with OEMs including Daimler, Toyota and SML Isuzu to deliver premium buses and coaches for international markets.</p>
+          </article>
+          <article class="card">
+            <h4>Defence & Aerospace Platforms</h4>
+            <p>Integrated programmes spanning tactical vehicles and unmanned aerial systems (drones) tailored for modern defence needs.</p>
+          </article>
+          <article class="card">
+            <h4>Rolus Slovakia R&D Hub</h4>
+            <p>European centre for advanced defence and aerospace engineering — co‑developing next‑generation systems and precision technologies with global partners.</p>
+          </article>
+          <article class="card">
+            <h4>Special Purpose Vehicles</h4>
+            <p>Custom‑engineered firefighting trucks, mobile healthcare units and logistics carriers supporting critical infrastructure.</p>
+          </article>
+        </div>
       </div>
-      <form class="card form" action="#" method="post" onsubmit="alert('Thanks! Use Formspree or a backend to receive messages.'); return false;">
-        <label>First name<input required></label>
-        <label>Last name<input required></label>
-        <label>Email<input type="email" required></label>
-        <label>Message<textarea rows="4"></textarea></label>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </section>
+
+    <section id="press" class="section section-alt">
+      <div class="container">
+        <h2>Press</h2>
+        <div class="cards">
+          <article class="card press">
+            <div class="press-meta">BusinessWorld — Apr 2025</div>
+            <h4>JCBL Group signs MoU with Rolus Slovakia for next‑generation combat vehicle technologies</h4>
+            <a class="arrow" href="https://www.businessworld.in/article/jcbl-group-and-texmaco-defence-systems-sign-strategic-defence-mou-with-rolus-slovakia-for-next-generation-combat-vehicle-technologies-555253" target="_blank" rel="noopener">Read the full article →</a>
+          </article>
+          <article class="card press">
+            <div class="press-meta">Entrepreneur India — Oct 2024</div>
+            <h4>Rishi Aggarwal on scaling innovation, global partnerships and building a diversified manufacturing powerhouse</h4>
+            <a class="arrow" href="https://www.entrepreneur.com/en-in/news-and-trends/rishi-aggarwal-md-jcbl-group/481526" target="_blank" rel="noopener">Read the full article →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Let’s explore collaborations, partnerships and supply programmes across Europe.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> contact@jcbleurope.com</li>
+            <li><strong>Partnerships:</strong> partnerships@jcbleurope.com</li>
+            <li><strong>Office:</strong> Transistorstraat 31, 1322 CK, Almere, The Netherlands</li>
+          </ul>
+        </div>
+        <form class="card form" action="#" method="post" onsubmit="alert('Thanks! Connect Formspree to receive submissions.'); return false;">
+          <label>First name<input required></label>
+          <label>Last name<input required></label>
+          <label>Email<input type="email" required></label>
+          <label>Message<textarea rows="4"></textarea></label>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <div>© 2025 JCBL Europe — A JCBL Group Enterprise</div>
       <div class="links">
-        <a href="#mission">About</a>
-        <a href="#expertise">Expertise</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#press">Press</a>
         <a href="#contact">Contact</a>
