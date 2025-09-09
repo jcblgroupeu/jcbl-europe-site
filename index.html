@@ -8,44 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/JCBL_Logo-03.png">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    html { scroll-behavior: smooth }
-    .center-text { text-align: center; }
-
-    /* Hero title in orange */
-    .hero h1 { color: #F28C00; }
-
-    /* Stats in orange */
-    #about .stat {
-      background: #fff;
-      border: 1.5px solid #F28C00;
-      color: #F28C00;
-    }
-    #about .stat strong,
-    #about .stat span {
-      color: #F28C00;
-    }
-
-    /* Center press cards */
-    .press-cards {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .press-cards .card {
-      max-width: 420px;
-      flex: 1 1 300px;
-    }
-  </style>
 </head>
 <body>
+  <!-- ===== Header / Navigation ===== -->
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#top" aria-label="JCBL Europe">
-        <img src="assets/logo.svg" alt="JCBL Europe logo" height="28" />
+        <img src="assets/JCBL_Logo-03.png" alt="JCBL Europe logo" height="28" />
       </a>
       <nav class="nav-links">
         <a href="#about">About</a>
@@ -57,7 +28,9 @@
     </div>
   </header>
 
+  <!-- ===== Main Content ===== -->
   <main id="top">
+    <!-- Hero -->
     <section class="hero hero-photo" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <h1 id="hero-title">JCBL Europe</h1>
@@ -68,12 +41,19 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="container">
+    <!-- Our Mission -->
+    <section id="about" class="section">
+      <div class="container about-wrap">
         <h2>Our Mission</h2>
-        <p class="lead">Since 1989, the JCBL Group has engineered world-class mobility and industrial solutions. JCBL Europe extends this legacy across the continent.</p>
-        <p>From buses and armoured vehicles to aerospace composites and advanced industrial assemblies, we unite European partners with proven Indian manufacturing scale and precision.</p>
-        <div class="card stats">
+        <p class="lead">
+          Since 1989, the JCBL Group has engineered world-class mobility and industrial solutions.
+          JCBL Europe extends this legacy across the continent.
+        </p>
+        <p class="about-copy">
+          From buses and armoured vehicles to aerospace composites and advanced industrial assemblies,
+          we unite European partners with proven Indian manufacturing scale and precision.
+        </p>
+        <div class="stats-grid">
           <div class="stat"><strong>35+</strong><span> Years</span></div>
           <div class="stat"><strong>5</strong><span> Factories</span></div>
           <div class="stat"><strong>3K+</strong><span> People</span></div>
@@ -82,6 +62,7 @@
       </div>
     </section>
 
+    <!-- Expertise -->
     <section id="expertise" class="section section-alt">
       <div class="container">
         <h2>Our Expertise</h2>
@@ -102,6 +83,7 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Featured Projects</h2>
@@ -126,6 +108,7 @@
       </div>
     </section>
 
+    <!-- Press -->
     <section id="press" class="section section-alt">
       <div class="container">
         <h2>Press</h2>
@@ -144,6 +127,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section">
       <div class="container grid-2">
         <div>
@@ -159,18 +143,23 @@
           <label>Last name<input name="last" required></label>
           <label>Email<input type="email" name="email" required></label>
           <label>Message<textarea name="message" rows="4" required></textarea></label>
-
           <input type="hidden" name="_subject" value="New enquiry from JCBL Europe website">
           <input type="hidden" name="_redirect" value="https://www.jcbleurope.com/#contact">
-
           <button class="btn" type="submit">Send Message</button>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container footer-inner">
+      <div class="footer-logos">
+        <img src="assets/JCBL_Logo-03.png" alt="JCBL Europe icon" height="28" />
+        <a href="https://jcblgroup.com" target="_blank" rel="noopener">
+          <img src="assets/JCBL_Logo-01.svg" alt="JCBL Group logo" height="28" />
+        </a>
+      </div>
       <div>© 2025 JCBL Europe — A JCBL Group Enterprise</div>
       <div class="links">
         <a href="#about">About</a>
