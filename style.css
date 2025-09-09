@@ -72,17 +72,33 @@ p{margin:0 0 1rem}
 .footer a{color:#c9d2e6;text-decoration:none;margin-left:12px}
 .footer a:hover{color:#fff}
 
-/* Stats: black background with orange text */
-#about .stat {
-  background: #0b0e13;         /* deep black */
-  border: 1.5px solid #0b0e13; /* blend border */
-  color: #F28C00;              /* orange text */
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-}
-#about .stat strong,
-#about .stat span {
-  color: #F28C00; /* force orange text */
+/* Stats: black boxes with orange text */
+#about .stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  justify-items: center;
 }
 
+#about .stat {
+  background: #000;           /* pure black box */
+  border: 1.5px solid #000;   /* seamless with background */
+  color: #F28C00;             /* orange text */
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 200px;           /* keeps boxes neat */
+  text-align: center;
+}
+
+#about .stat strong {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 4px;
+  color: #F28C00;             /* orange numbers */
+}
+
+#about .stat span {
+  font-size: 1rem;
+  color: #F28C00;             /* orange labels */
+}
