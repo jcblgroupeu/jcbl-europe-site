@@ -71,3 +71,14 @@ p{margin:0 0 1rem}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .footer a{color:#c9d2e6;text-decoration:none;margin-left:12px}
 .footer a:hover{color:#fff}
+
+/* Yellow stats */
+#about .stat {
+  background: #fff;
+  border: 1.5px solid #FFD700; /* gold/yellow border */
+  color: #FFD700;
+}
+#about .stat strong,
+#about .stat span {
+  color: #FFD700;
+}
