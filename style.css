@@ -149,3 +149,11 @@ p { margin:0 0 1rem; }
 }
 .footer a { color:#c9d2e6; text-decoration:none; margin-left:12px; }
 .footer a:hover { color:#fff; }
+
+.footer-logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
