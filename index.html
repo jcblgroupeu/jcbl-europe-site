@@ -13,9 +13,32 @@
   <style>
     html { scroll-behavior: smooth }
     .center-text { text-align: center; }
-    .stats .stat { color: #ff6600; } /* orange for numbers + labels */
-    .press-cards { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-    .press-cards .card { max-width: 420px; flex: 1 1 300px; }
+
+    /* Hero title in orange */
+    .hero h1 { color: #F28C00; }
+
+    /* Yellow stats */
+    #about .stat {
+      background: #fff;
+      border: 1.5px solid #FFD700;
+      color: #FFD700;
+    }
+    #about .stat strong,
+    #about .stat span {
+      color: #FFD700;
+    }
+
+    /* Center press cards */
+    .press-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .press-cards .card {
+      max-width: 420px;
+      flex: 1 1 300px;
+    }
   </style>
 </head>
 <body>
@@ -135,7 +158,11 @@
           <label>First name<input name="first" required></label>
           <label>Last name<input name="last" required></label>
           <label>Email<input type="email" name="email" required></label>
-          <label>Message<textarea name="message" rows="4"></textarea></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+
+          <input type="hidden" name="_subject" value="New enquiry from JCBL Europe website">
+          <input type="hidden" name="_redirect" value="https://www.jcbleurope.com/#contact">
+
           <button class="btn" type="submit">Send Message</button>
         </form>
       </div>
