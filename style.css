@@ -164,3 +164,18 @@ p{margin:0 0 1rem}
 .footer .links a:hover {
   text-decoration: underline;
 }
+
+
+
+/* Center the contact section */
+.contact-center {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-center form {
+  margin-top: 1.5rem;
+  text-align: left; /* keep form labels aligned nicely */
+}
+
