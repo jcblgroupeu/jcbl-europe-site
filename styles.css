@@ -84,6 +84,18 @@ p{margin:0 0 1rem;color:#2a2f39}
 .form input,.form textarea{width:100%;border:1.5px solid #dfe5ef;border-radius:12px;padding:.75rem .9rem;font:inherit}
 .form input:focus,.form textarea:focus{outline:none;border-color:#f2a441;box-shadow:0 0 0 6px rgba(242,140,0,.12)}
 
+/* Center the contact section */
+.contact-center {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-center form {
+  margin-top: 1.5rem;
+  text-align: left; /* keep form labels aligned nicely */
+}
+
 /* Footer */
 .footer{background:#0b0e13;color:#c9d2e6;padding:24px 0;border-top:2px solid var(--orange)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
